@@ -1,7 +1,7 @@
 import { ForbiddenException, Injectable } from '@nestjs/common';
 import { Book } from './book.entity';
 import { InjectModel } from '@nestjs/sequelize';
-import { InsertBookDTO, UpdateBookDTO } from '../../dto/book.data';
+import { InsertBookDTO, UpdateBookDTO } from '../../dto';
 
 @Injectable()
 export class BookService {
