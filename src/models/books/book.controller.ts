@@ -23,7 +23,7 @@ export class bookController {
     return this.bookService.findAll(userId);
   }
 
-  @Get('/:id')
+  @Get(':id')
   getBookById(
     @Param('id', ParseIntPipe) bookId: number,
     @CurrentUser('id') userId: number,

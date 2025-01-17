@@ -18,6 +18,7 @@ export class BookService {
 
   async findOne(id_book: number, userId: number): Promise<Book> {
     const book = await this.bookModel.findOne({ where: { id_book: id_book } });
+    if (!book) throw new ForbiddenException("Book doesn't exist");
     if (book['user_id'] != userId)
       throw new ForbiddenException("You don't have access to this book");
     if (!book) throw new ForbiddenException("Book doesn't exist");
@@ -41,9 +42,9 @@ export class BookService {
 
   async editBook(id_book: number, userId: number, data: UpdateBookDTO) {
     const book = await this.bookModel.findOne({ where: { id_book: id_book } });
+    if (!book) throw new ForbiddenException("Book doesn't exist");
     if (book['user_id'] != userId)
       throw new ForbiddenException("You don't have access to this book");
-    if (!book) throw new ForbiddenException("Book doesn't exist");
     return this.bookModel
       .update({ ...data }, { where: { id_book: id_book } })
       .then(() => {

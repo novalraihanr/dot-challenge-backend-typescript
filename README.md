@@ -1,9 +1,9 @@
 <br />
 <div align="center">
-<h3 align="center">Simple Back-end using NestJs Typescript</h3>
+<h3 align="center">Simple Back-End Book Database using NestJs Typescript</h3>
 
   <p align="center">
-    A simple Back-end example using NestJs Typescript for DOT Internship Challenge
+    A simple Back-end Book Database example using NestJs Typescript for DOT Internship Challenge
     <br />
   </p>
 </div>
@@ -47,11 +47,16 @@ This is a simple back-end examples using NestJs Typescript. Included in this pro
 - Choose a project pattern that you often use.
 - Explain why you use that pattern in the github readme.
 
+### Pattern Project
+
+The pattern project that I always used is MVC. I am familiar with this pattern and always uses it when I create the backend architecture and in my opinion it's a simple and easy to understand project pattern. But I am still exploring all of the different pattern project there are.
+
 <!-- Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
+
 ## Project setup
 
 ```bash
@@ -122,14 +127,18 @@ Once the backend server is running, you can access the API at [http://localhost:
 ```
 
 ### Data
+
 - User
+
 ```json
 "id" : number
 "email" : string
 "password" : string
 "name" : string
 ```
+
 - Book
+
 ```json
 "id_book" : number
 "title" : string
@@ -141,6 +150,26 @@ Once the backend server is running, you can access the API at [http://localhost:
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Documentation
+### Sign Up
+![Sign Up](/image/create_user.png)
+### Login
+![Sign Up](/image/login_user.png)
+### View User Information
+![Sign Up](/image/get_user_info.png)
+### Edit User
+![Sign Up](/image/edit_user.png)
+### Create Books
+![Sign Up](/image/create_book.png)
+### View Current Books List
+![Sign Up](/image/get_all_books.png)
+### Display Book by Id
+![Sign Up](/image/get_one_book.png)
+### Update Book
+![Sign Up](/image/update_book.png)
+### Delete Book
+![Sign Up](/image/delete_book.png)
 
 <!-- CONTACT -->
 
